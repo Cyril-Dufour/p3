@@ -1,3 +1,7 @@
+main {
+  background-color: rgb(230, 225, 225);
+}
+
 .titre1-principal img {
     width: 18%;
     height: 70px;
@@ -17,31 +21,31 @@
     height: 400px;
     object-fit: cover;
   }
-  .container_bloc_carte {
-    width: 32px;
-    position: relative;
-    left: 8%;
-    top: 10px;
-    margin-bottom: 30px;
-    border-bottom: 3px solid $tertiary;
-    padding-bottom: 5px;
-    font-size: 100%;
-    font-weight: 500;
-  }
-  .container_titre_page .far{
-   margin-bottom: 60px;
-   margin-left: 60px;
-   color: black;
-   background: linear-gradient($secondary, $primary);
-   background-clip: text;
-  }
-  .container_titre_page:hover .far{
-    background: linear-gradient($secondary, $primary);
+
+  .container_titre_page{
+    h1{
+      margin-left: 35px;
+    }
   }
   
-  .container_titre_page h1{
-    margin-left: 25px;
+  .section_carte {
+    position: relative;
+    bottom: 52px;
+    width: 100%;
+    margin-top: 50px;
+    .container_bloc_carte {
+      width: 32px;
+      position: relative;
+      left: 8%;
+      top: 10px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid $tertiary;
+      padding-bottom: 5px;
+      font-size: 100%;
+      font-weight: 500;
+    }
   }
+
   .bloc_carte {
     display: flex;
     background-color: white;
@@ -51,47 +55,34 @@
     margin: auto;
     margin-bottom: 10px;
     box-shadow: 0px 0px 10px rgb(158, 157, 157);
-    
-  }
-  
-  .section_carte {
-    position: relative;
-    bottom: 52px;
-    width: 100%;
-    margin-top: 50px;
-  }
-  .prix_select {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: center;
-    width: 0px;
-    transition-duration: 500ms;
-  }
-  
-  .prix {
-    position: relative;
-    top: 18px;
-    font-size: 16px;
-    margin-right: 5%;
-    font-weight: bold;
-  }
-  
-  .titre_carte {
-    width: 100%;
-    margin-top: 15px;
-  }
-  
+    .titre_carte {
+      width: 100%;
+      margin-top: 15px;
+    }
+    .prix {
+      position: relative;
+      top: 18px;
+      font-size: 16px;
+      margin-right: 5%;
+      font-weight: bold;
+    }
+    .prix_select {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: center;
+      width: 0px;
+      transition-duration: 500ms;
+    }
+  }  
+
   .button:hover {
     background: linear-gradient(#ff79da, #9256dc);
   }
-  
+
   form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  main {
-    background-color: rgb(230, 225, 225);
   }
   

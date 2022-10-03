@@ -478,6 +478,7 @@ main .fond img {
   position: relative;
   bottom: 52px;
   width: 100%;
+  margin-top: 50px;
 }
 
 .prix_select {

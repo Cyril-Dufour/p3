@@ -1,0 +1,114 @@
+/********************** Loader *********************/
+
+@keyframes loader_page {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes tourner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    background-color: rgb(240, 238, 238);
+    color: #9256dc;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: loader_page 0s forwards;
+    animation-delay: 1s;
+    transform-origin: top;
+    i {
+        animation: tourner 1s infinite linear;
+      }
+  }
+  
+  /*************Slide left menu page restaurants*************/
+
+
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-0px);
+      transform: translateX(-0px);
+    }
+  }
+  @keyframes rotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .slide-left {
+    display: flex;
+    border-radius: 0px 15px 15px 0px;
+    .fa-check {
+        border: 2px solid white;
+        border-radius: 30px;
+        background-color: white;
+      }
+  }
+  .slide-left:hover {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    background-color: var(--tertiary);
+    padding: 30px;
+  }
+  .slide-left:hover i{
+    animation: rotation 1s;
+  }
+
+  /****************Apparition du menu  ***************/
+
+.time-0{
+    animation: apparition 1s;
+  }
+  .time-1{
+    animation: apparition 2s;
+  }
+  .time-2{
+    animation: apparition 3s;
+  }
+  .time-3{
+    animation: apparition 4s;
+  }
+  .time-4{
+    animation: apparition 5s;
+  }
+  .time-5{
+    animation: apparition 6s;
+  }
+  .time-6{
+    animation: apparition 7s;
+  }
+  .time-7{
+    animation: apparition 8s;
+  }
+  .time-8{
+    animation: apparition 9s;
+  }
+  
+  
+  @keyframes apparition {
+    0% {
+      opacity: 0;
+      transform: translateY(-20%);
+      animation-delay: 1s;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }

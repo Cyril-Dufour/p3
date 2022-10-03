@@ -1,0 +1,22 @@
+{
+  "name": "livrable_3",
+  "version": "1.0.0",
+  "description": "\"Oh_my_food\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyril-Dufour/p3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyril-Dufour/p3/issues"
+  },
+  "homepage": "https://github.com/Cyril-Dufour/p3#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}

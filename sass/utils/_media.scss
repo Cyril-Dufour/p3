@@ -1,0 +1,83 @@
+/********************************************************************
+                       Media Queries
+*********************************************************************/
+@media screen and (min-width: 994px) {
+    body {
+      margin: 0;
+      margin: auto;
+      height: 100%;
+      width: 50%;
+    }
+  
+    .fa-arrow-left {
+      position: absolute;
+      top: 25px;
+      left: 27%;
+      margin: auto;
+      font-size: 160%;
+      color: black;
+    }
+  
+    .titre_carte_bloc {
+      position: relative;
+      left: 10px;
+    }
+  
+    h4 {
+      font-size: 1.06rem;
+      bottom: 20px;
+    }
+  
+    .sous {
+      bottom: 40px;
+    }
+  
+    .fa-check {
+      padding: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 445px) and (max-width: 994px) {
+    .fa-arrow-left {
+      margin: auto;
+      font-weight: 900;
+      color: black;
+      position: absolute;
+      top: 25px;
+      left: 6%;
+      font-size: 130%;
+    }
+  
+    h4 {
+      font-size: 1.06rem;
+      position: relative;
+      bottom: 23px;
+    }
+  
+    .sous {
+      font-size: 0.92rem;
+      position: relative;
+      bottom: 42px;
+    }
+  }
+  
+  @media screen and (min-width: 375px) and (max-width: 445px) {
+    .fa-arrow-left {
+      margin: auto;
+      font-weight: 900;
+      color: black;
+      position: absolute;
+      top: 25px;
+      left: 6%;
+      font-size: 130%;
+    }
+    .stitre {
+      width: 100%;
+    }
+    .index a.button {
+      font-size: 22px;
+    }
+  }

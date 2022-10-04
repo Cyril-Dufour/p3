@@ -1,7 +1,7 @@
 /********************************************************************
                        Media Queries
 *********************************************************************/
-@media screen and (min-width: 994px) {
+  @media screen and (min-width: 992px) {
     body {
       margin: 0;
       margin: auto;
@@ -17,7 +17,6 @@
       font-size: 160%;
       color: black;
     }
-  
     .titre_carte_bloc {
       position: relative;
       left: 10px;
@@ -40,7 +39,7 @@
     }
   }
   
-  @media screen and (min-width: 445px) and (max-width: 994px) {
+  @media screen and (max-width: 992px) {
     .fa-arrow-left {
       margin: auto;
       font-weight: 900;
@@ -50,7 +49,20 @@
       left: 6%;
       font-size: 130%;
     }
-  
+    .section_carte{
+      width: 100%;
+    }
+    .ensemble-carte{
+      flex-wrap: nowrap;
+      flex-direction: column;
+     
+    }
+    .container_bloc_carte{
+      width: 10%;
+     
+    }
+    
+    
     h4 {
       font-size: 1.06rem;
       position: relative;
@@ -64,21 +76,6 @@
     }
   }
   
-  @media screen and (min-width: 375px) and (max-width: 445px) {
-    .fa-arrow-left {
-      margin: auto;
-      font-weight: 900;
-      color: black;
-      position: absolute;
-      top: 25px;
-      left: 6%;
-      font-size: 130%;
-    }
-    .stitre {
-      width: 100%;
-    }
-    .index a.button {
-      font-size: 22px;
-    }
-  }
+  
+
   

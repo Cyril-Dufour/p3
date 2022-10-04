@@ -56,19 +56,22 @@
     display: flex;
     border-radius: 0px 15px 15px 0px;
     .fa-check {
+      opacity: 0;
         border: 2px solid white;
         border-radius: 30px;
         background-color: white;
+        color: #99e2d0;
       }
   }
-  .slide-left:hover {
+  .bloc_carte:hover .slide-left{
     -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    background-color: var(--tertiary);
+    background-color: #99e2d0;
     padding: 30px;
   }
-  .slide-left:hover i{
+  .bloc_carte:hover i{
     animation: rotation 1s;
+    opacity: 1;
   }
 
   /****************Apparition du menu  ***************/
@@ -105,7 +108,7 @@
   @keyframes apparition {
     0% {
       opacity: 0;
-      transform: translateY(-20%);
+      transform: translateY(-30%);
       animation-delay: 1s;
     }
     100% {

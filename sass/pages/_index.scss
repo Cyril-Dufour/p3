@@ -59,6 +59,7 @@
         font-size: 22px;
         font-weight: bold;
         &:hover {
+            box-shadow: #9256dc;
             background: linear-gradient(#ff79da, #9256dc);
         }
     }
@@ -209,14 +210,6 @@
         margin-top: 7px;
     }
     
-    .sousblock_restaurant {
-        display: inline-block;
-        flex-direction: row;
-        i{
-        font-size: 25px;
-        }
-    }
-    
     .block_restaurant_info {
         display: inline-flex;
         flex-direction: column;
@@ -224,25 +217,7 @@
         text-decoration: none;
         font-size: 20px;
     }
-    
-    .sousblock_restaurant .fas {
-        opacity: 0;
-    }
-    .sousblock_restaurant:hover .fas {
-        opacity: 1;
-        background: linear-gradient(#FF79DA, #9356DC);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .sousblock_restaurant .far {
-        opacity: 1;
-        color: #9256dc;
-    }
-    .sousblock_restaurant:hover .far {
-        opacity: 0;
-    }
-    
-    
+
     a:link,
     a:visited,
     a:hover,

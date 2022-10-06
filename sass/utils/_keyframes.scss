@@ -38,11 +38,11 @@
 
   @keyframes slide-left {
     0% {
-      -webkit-transform: translateX(0);
+      transform: translateX(0);
       transform: translateX(0);
     }
     100% {
-      -webkit-transform: translateX(-0px);
+      transform: translateX(-0px);
       transform: translateX(-0px);
     }
   }
@@ -64,7 +64,7 @@
       }
   }
   .bloc_carte:hover .slide-left{
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     background-color: #99e2d0;
     padding: 30px;
@@ -77,42 +77,43 @@
   /****************Apparition du menu  ***************/
 
 .time-0{
-    animation: apparition 1s;
+    animation: apparition 0.2s;
   }
   .time-1{
-    animation: apparition 2s;
+    animation: apparition 0.4s;
   }
   .time-2{
-    animation: apparition 3s;
+    animation: apparition 0.6s;
   }
   .time-3{
-    animation: apparition 4s;
+    animation: apparition 0.7s;
   }
   .time-4{
-    animation: apparition 5s;
+    animation: apparition 1s;
   }
   .time-5{
-    animation: apparition 6s;
+    animation: apparition 1.2s;
   }
   .time-6{
-    animation: apparition 7s;
+    animation: apparition 1.4s;
   }
   .time-7{
-    animation: apparition 8s;
+    animation: apparition 1.6s;
   }
   .time-8{
-    animation: apparition 9s;
+    animation: apparition 1.8s;
   }
   
   
   @keyframes apparition {
     0% {
-      opacity: 0;
-      transform: translateY(-30%);
-      animation-delay: 1s;
-    }
-    100% {
       opacity: 1;
       transform: translateY(0%);
+      
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-30%);
+      animation-delay: 1.8s;
     }
   }

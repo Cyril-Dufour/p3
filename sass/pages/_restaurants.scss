@@ -33,17 +33,30 @@ main {
       right: 3%;
     }
   }
+
   h3{
     margin-left: 8%;
   }
+
   .heart1{
-    fill: $secondary;
-  
+    svg{
+      overflow: visible;
+    }
+    path{
+      stroke: black;
+      stroke-width: 2px;
+      stroke-opacity: 1;
+      fill-opacity: 0;
+      fill: url(#gradient1);
+      transition: all 1s ease-in-out;
+    }
+    path:hover{
+      fill-opacity: 1;
+      stroke-opacity: 0;
+    }
+
   }
-  svg:hover{
-    fill:  $primary;
-  }
-  
+
   .section_carte {
     bottom: 52px;
     width: 100%;
@@ -88,7 +101,6 @@ main {
       overflow: hidden;
       white-space: nowrap;
     }
-
     .prix {
       position: relative;
       top: 18px;

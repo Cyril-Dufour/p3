@@ -19,7 +19,7 @@
     place-items: center;
     position: fixed;
     background-color: rgb(240, 238, 238);
-    color: #9256dc;
+    color: #854dca;
     height: 100vh;
     inset: 0;
     z-index: 1;
@@ -36,16 +36,7 @@
   /*************Slide left menu page restaurants*************/
 
 
-  @keyframes slide-left {
-    0% {
-      transform: translateX(0);
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-0px);
-      transform: translateX(-0px);
-    }
-  }
+ 
   @keyframes rotation {
     to {
       transform: rotate(360deg);
@@ -64,14 +55,17 @@
       }
   }
   .bloc_carte:hover .slide-left{
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-left 5.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     background-color: #99e2d0;
     padding: 30px;
+    transition-duration: 1s;
   }
-  .bloc_carte:hover i{
-    animation: rotation 1s;
+ 
+  
+  .bloc_carte:hover .slide-left i{
     opacity: 1;
+    transition-duration: 1s;
+    animation: rotation 1s;
   }
 
   /****************Apparition du menu  ***************/

@@ -17,7 +17,7 @@
   place-items: center;
   position: fixed;
   background-color: rgb(240, 238, 238);
-  color: #9256dc;
+  color: #854dca;
   height: 100vh;
   inset: 0;
   z-index: 1;
@@ -31,16 +31,6 @@
 }
 
 /*************Slide left menu page restaurants*************/
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(0px);
-    transform: translateX(0px);
-  }
-}
 @keyframes rotation {
   to {
     transform: rotate(360deg);
@@ -59,15 +49,16 @@
 }
 
 .bloc_carte:hover .slide-left {
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 5.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background-color: #99e2d0;
   padding: 30px;
+  transition-duration: 1s;
 }
 
-.bloc_carte:hover i {
-  animation: rotation 1s;
+.bloc_carte:hover .slide-left i {
   opacity: 1;
+  transition-duration: 1s;
+  animation: rotation 1s;
 }
 
 /****************Apparition du menu  ***************/
@@ -167,10 +158,6 @@
   .section_carte {
     width: 100%;
   }
-  .ensemble-carte {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
   .container_bloc_carte {
     width: 10%;
   }
@@ -246,9 +233,13 @@ img {
   color: white;
   font-size: 22px;
   font-weight: bold;
+  box-shadow: 0.3rem 0.3rem 10px #9c9c9c;
+  transform: scale(1);
+  transition: transform 400ms;
 }
-.button:hover {
+.button::before {
   background: linear-gradient(#ff79da, #9256dc);
+  transform: scale(1.2);
 }
 
 /*****************************************
@@ -433,6 +424,23 @@ a:active {
   text-decoration: none;
 }
 
+.heart1 svg {
+  overflow: visible;
+  margin-left: 290px;
+}
+.heart1 path {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+  fill-opacity: 0;
+  fill: url(#gradient1);
+  transition: all 1s ease-in-out;
+}
+.heart1 path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+
 main {
   background-color: rgb(230, 225, 225);
 }
@@ -493,14 +501,10 @@ h3 {
   margin: auto;
 }
 .section_carte .ensemble-carte {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  margin: auto;
-  margin-bottom: 50px;
 }
 .section_carte .block1 {
-  width: 30%;
+  width: 80%;
   margin: auto;
 }
 .section_carte .container_bloc_carte {
@@ -554,6 +558,8 @@ h3 {
 
 .button:hover {
   background: linear-gradient(#ff79da, #9256dc);
+  opacity: 0.5;
+  transform: scale(1.15);
 }
 
 form {

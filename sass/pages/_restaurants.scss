@@ -62,14 +62,11 @@ main {
     width: 100%;
     margin: auto;
     .ensemble-carte{
-      display: flex;
-      flex-wrap: wrap;
       width: 100%;
-      margin: auto;
-      margin-bottom: 50px;
+    
     }
     .block1{
-      width: 30%;
+      width: 80%;
       margin:auto
     }
     .container_bloc_carte {
@@ -119,10 +116,12 @@ main {
   .bloc_carte:hover .titre_carte{
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: nowrap;   
   }
   .button:hover {
     background: linear-gradient($secondary,$primary);
+    opacity: 0.5;
+    transform: scale(1.15);
   }
 
   form {

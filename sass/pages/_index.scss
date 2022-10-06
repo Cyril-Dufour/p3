@@ -58,9 +58,12 @@
         color: white;
         font-size: 22px;
         font-weight: bold;
-        &:hover {
-            box-shadow: #9256dc;
+        box-shadow: 0.30rem 0.30rem 10px #9c9c9c;
+        transform: scale(1);
+        transition: transform 400ms;
+        &::before {
             background: linear-gradient(#ff79da, #9256dc);
+            transform: scale(1.2);
         }
     }
 
@@ -190,7 +193,6 @@
         height: 180px;
         object-fit: cover;
     }
-    
     .img_new {
         background: #99e2d0;
         position: absolute;
@@ -243,3 +245,22 @@
         color: black;
         text-decoration: none;
     }
+    .heart1{
+        svg{
+          overflow: visible;
+          margin-left: 290px;
+        }
+        path{
+          stroke: black;
+          stroke-width: 2px;
+          stroke-opacity: 1;
+          fill-opacity: 0;
+          fill: url(#gradient1);
+          transition: all 1s ease-in-out;
+        }
+        path:hover{
+          fill-opacity: 1;
+          stroke-opacity: 0;
+        }
+    
+      }

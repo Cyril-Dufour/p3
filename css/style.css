@@ -237,9 +237,10 @@ img {
   transform: scale(1);
   transition: transform 400ms;
 }
-.button::before {
+.button:hover {
   background: linear-gradient(#ff79da, #9256dc);
   transform: scale(1.2);
+  box-shadow: 0.5rem 0.5rem 16px #000000;
 }
 
 /*****************************************
@@ -326,8 +327,6 @@ section .contenu-fonctionnement .titre-fonctionnement {
 
 .full-block {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   margin-left: 10%;
@@ -347,7 +346,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   display: flex;
   background-color: white;
   flex-direction: column;
-  width: 500px;
+  width: 400px;
   height: 250px;
   border-radius: 20px;
 }
@@ -366,7 +365,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
 .restaurant_img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 500px;
+  width: 400px;
   height: 180px;
   object-fit: cover;
 }
@@ -376,7 +375,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  right: -20%;
+  right: 2%;
   top: 8%;
   color: rgb(56, 185, 4);
   width: 25%;
@@ -393,7 +392,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
 .block_restaurant_info {
   display: inline-flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   text-decoration: none;
   font-size: 20px;
 }
@@ -425,8 +424,10 @@ a:active {
 }
 
 .heart1 svg {
+  position: absolute;
   overflow: visible;
-  margin-left: 290px;
+  margin-left: 210px;
+  margin-top: -15px;
 }
 .heart1 path {
   stroke: black;

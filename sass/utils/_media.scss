@@ -1,14 +1,21 @@
 /********************************************************************
                        Media Queries
 *********************************************************************/
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 492px) {
     body {
       margin: 0;
       margin: auto;
       height: 100%;
       width: 50%;
     }
-  
+    .full-block{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .container_restaurant_block{
+      margin: 20px;
+    }
     .fa-arrow-left {
       position: absolute;
       top: 25px;

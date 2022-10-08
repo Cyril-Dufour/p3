@@ -112,12 +112,20 @@
 /********************************************************************
                        Media Queries
 *********************************************************************/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 492px) {
   body {
     margin: 0;
     margin: auto;
     height: 100%;
     width: 50%;
+  }
+  .full-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container_restaurant_block {
+    margin: 20px;
   }
   .fa-arrow-left {
     position: absolute;
@@ -181,6 +189,8 @@ body {
 }
 body main {
   background-color: #f2f2f2;
+  width: 100%;
+  margin: 0;
 }
 body h1 {
   font-family: Shrikhand, sans-serif;
@@ -312,7 +322,6 @@ section .contenu-fonctionnement .titre-fonctionnement {
   display: flex;
   flex-wrap: wrap;
   background-color: #f2f2f2;
-  width: 80%;
   height: 100%;
 }
 .container_restaurant h2 {
@@ -327,9 +336,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
 
 .full-block {
   width: 100%;
-  justify-content: center;
   margin: auto;
-  margin-left: 10%;
   padding-bottom: 40px;
 }
 
@@ -339,20 +346,20 @@ section .contenu-fonctionnement .titre-fonctionnement {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .block_restaurant {
   display: flex;
   background-color: white;
   flex-direction: column;
-  width: 400px;
+  width: 350px;
   height: 250px;
   border-radius: 20px;
 }
 
 .block_restaurant_img {
-  width: 400px;
+  width: 350px;
   height: 180px;
   background-color: white;
   border-radius: 20px;
@@ -365,7 +372,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
 .restaurant_img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: 400px;
+  width: 350px;
   height: 180px;
   object-fit: cover;
 }
@@ -375,7 +382,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  right: 2%;
+  right: 6px;
   top: 8%;
   color: rgb(56, 185, 4);
   width: 25%;
@@ -423,13 +430,12 @@ a:active {
   text-decoration: none;
 }
 
-.heart1 svg {
+.heart2 svg {
   position: absolute;
+  right: 40px;
   overflow: visible;
-  margin-left: 210px;
-  margin-top: -15px;
 }
-.heart1 path {
+.heart2 path {
   stroke: black;
   stroke-width: 2px;
   stroke-opacity: 1;
@@ -437,7 +443,7 @@ a:active {
   fill: url(#gradient1);
   transition: all 1s ease-in-out;
 }
-.heart1 path:hover {
+.heart2 path:hover {
   fill-opacity: 1;
   stroke-opacity: 0;
 }
@@ -467,21 +473,19 @@ main .fond img {
 }
 
 .container_titre_page .titre_page {
-  margin-left: 50px;
+  margin-left: 10%;
   display: flex;
   flex-direction: row;
 }
 .container_titre_page svg {
+  margin-top: 5px;
   position: absolute;
   right: 3%;
 }
 
-h3 {
-  margin-left: 8%;
-}
-
 .heart1 svg {
   overflow: visible;
+  margin-top: -60px;
 }
 .heart1 path {
   stroke: black;
@@ -511,7 +515,7 @@ h3 {
 .section_carte .container_bloc_carte {
   width: 32px;
   position: relative;
-  left: 8%;
+  left: 2%;
   top: 10px;
   margin-bottom: 30px;
   border-bottom: 3px solid #99e2d0;
@@ -567,6 +571,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+form .container_button {
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 header {

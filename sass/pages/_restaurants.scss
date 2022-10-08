@@ -24,23 +24,22 @@ main {
 
   .container_titre_page{
     .titre_page{
-      margin-left: 50px;
+      margin-left: 10%;
       display: flex;
       flex-direction: row;
     }
     svg{
+      margin-top: 5px;
       position: absolute;
       right: 3%;
     }
   }
 
-  h3{
-    margin-left: 8%;
-  }
-
   .heart1{
+    
     svg{
       overflow: visible;
+      margin-top: -60px;  
     }
     path{
       stroke: black;
@@ -72,7 +71,7 @@ main {
     .container_bloc_carte {
       width: 32px;
       position: relative;
-      left: 8%;
+      left: 2%;
       top: 10px;
       margin-bottom: 30px;
       border-bottom: 3px solid $tertiary;
@@ -116,7 +115,7 @@ main {
   .bloc_carte:hover .titre_carte{
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;   
+    white-space: nowrap;  
   }
   .button:hover {
     background: linear-gradient($secondary,$primary);
@@ -128,5 +127,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    .container_button{
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
   }
   

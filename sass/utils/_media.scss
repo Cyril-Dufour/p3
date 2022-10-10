@@ -1,7 +1,7 @@
 /********************************************************************
                        Media Queries
 *********************************************************************/
-  @media screen and (min-width: 492px) {
+  @media screen and (min-width: 992px) {
     body {
       margin: 0;
       margin: auto;
@@ -44,6 +44,11 @@
       height: 20px;
       border-radius: 20px;
     }
+    .full_block{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
   }
   
   @media screen and (max-width: 992px) {
@@ -56,15 +61,15 @@
       left: 6%;
       font-size: 130%;
     }
+
     .section_carte{
       width: 100%;
     }
+
     .container_bloc_carte{
       width: 10%;
-     
     }
-    
-    
+  
     h4 {
       font-size: 1.06rem;
       position: relative;

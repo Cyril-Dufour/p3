@@ -44,10 +44,16 @@
       height: 20px;
       border-radius: 20px;
     }
-    .full_block{
+    footer h1{
+       text-align: center;
+    }
+    .full_bloc{
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      & p{
+        margin-right: 30px;
+      }
     }
   }
   

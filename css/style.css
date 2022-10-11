@@ -39,6 +39,7 @@
 .slide-left {
   display: flex;
   border-radius: 0px 15px 15px 0px;
+  transition: all 0.6s;
 }
 .slide-left .fa-check {
   opacity: 0;
@@ -46,18 +47,17 @@
   border-radius: 30px;
   background-color: white;
   color: #99e2d0;
+  transition: all 0.6s;
 }
 
 .bloc_carte:hover .slide-left {
   animation: slide-left 5.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   background-color: #99e2d0;
   padding: 30px;
-  transition-duration: 1s;
 }
 
 .bloc_carte:hover .slide-left i {
   opacity: 1;
-  transition-duration: 1s;
   animation: rotation 1s;
 }
 
@@ -156,10 +156,16 @@
     height: 20px;
     border-radius: 20px;
   }
-  .full_block {
+  footer h1 {
+    text-align: center;
+  }
+  .full_bloc {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+  .full_bloc p {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -320,8 +326,8 @@ section .contenu-fonctionnement .titre-fonctionnement {
   color: #9256dc;
 }
 
-.fonctionnement:hover {
-  background: #9256dc;
+.fonctionnement:hover .fa-solid {
+  color: #9256dc;
 }
 
 /***********************************************
@@ -339,7 +345,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
 }
 .container_restaurant .titre_restaurant {
   font-size: 32px;
-  margin-left: 15px;
+  margin-left: 55px;
 }
 
 .full-block {
@@ -471,6 +477,13 @@ main .ensemble_contenu {
   margin-right: auto;
 }
 
+.fa-arrow-left {
+  transform: scale(1);
+}
+.fa-arrow-left:hover {
+  transform: scale(1.4);
+}
+
 /********************
       Menu           
 *********************/
@@ -546,8 +559,18 @@ main .fond img {
 .bloc_carte .titre_carte {
   width: 100%;
   margin-top: 15px;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bloc_carte .titre_carte_bloc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bloc_carte .sous {
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .bloc_carte .prix {

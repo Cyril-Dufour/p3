@@ -20,7 +20,15 @@ main {
     margin-left: auto;
     margin-right: auto;
   }
-} 
+}
+.fa-arrow-left{
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.4);
+   
+    }
+}
+
   
   /********************
         Menu           
@@ -102,8 +110,18 @@ main {
     .titre_carte {
       width: 100%;
       margin-top: 15px;
-      text-overflow: ellipsis;
       overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .titre_carte_bloc{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .sous{
+      overflow: hidden;
+      text-overflow: ellipsis;
       white-space: nowrap;
     }
     .prix {

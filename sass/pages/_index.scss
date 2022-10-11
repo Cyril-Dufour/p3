@@ -64,7 +64,7 @@
         transform: scale(1);
         transition: transform 400ms;
         &:hover {
-            background: linear-gradient(#ff79da, #9256dc);
+            background: linear-gradient($secondary, $primary);
             transform: scale(1.2);
             box-shadow: 0.50rem 0.50rem 16px #000000;
         }
@@ -127,8 +127,8 @@
             color: $primary;
         }
     }
-    .fonctionnement:hover{
-        background: #9256dc;
+    .fonctionnement:hover .fa-solid{
+        color: #9256dc;
     }
 
     /***********************************************
@@ -145,7 +145,7 @@
         }
         .titre_restaurant {
             font-size: 32px;
-            margin-left: 15px;
+            margin-left: 55px;
         }
     }
     

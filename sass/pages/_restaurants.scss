@@ -68,6 +68,7 @@ main {
       transition: all 1s ease-in-out;
     }
     path:hover{
+      cursor: pointer;
       fill-opacity: 1;
       stroke-opacity: 0;
     }

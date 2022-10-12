@@ -166,9 +166,6 @@
     height: 20px;
     border-radius: 20px;
   }
-  footer h1 {
-    text-align: center;
-  }
   .full_bloc {
     display: flex;
     flex-wrap: wrap;
@@ -533,6 +530,7 @@ main .fond img {
   transition: all 1s ease-in-out;
 }
 .heart1 path:hover {
+  cursor: pointer;
   fill-opacity: 1;
   stroke-opacity: 0;
 }

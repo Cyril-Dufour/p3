@@ -71,10 +71,9 @@
   /****************Apparition du menu  ***************/
 
 .block1 {
-  animation: apparition1 6s;
   @for $i from 0 through 9 {
     .time-#{$i}{
-      animation: apparition 0.1s + $i;
+      animation: apparition 1s ease-in-out both $i * 0.25s;
       
     }
   }
@@ -83,22 +82,11 @@
 @keyframes apparition{
   0%{
     transform: translateY(30%);
-    opacity: 0.2;
+    opacity: 0;
   }
   100%{
-    visibility: visible;
     transform: translateY(0);
     opacity: 1;
   }
 }
-@keyframes apparition1{
-  0%{
-    transform: translateY(30%);
-    opacity: 0.2;
-  }
-  100%{
-    visibility: visible;
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+

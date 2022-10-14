@@ -18,11 +18,12 @@
         }
       }
     }
-   
-    .full-block{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .block_titre_restaurant{
+      width: 100%;
+    }
+    .container_restaurant{
+      width: 100%;
+      justify-content: center
     }
     .container_restaurant_block{
       margin: 20px;

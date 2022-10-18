@@ -248,25 +248,6 @@ img {
   font-size: 22px;
 }
 
-.button {
-  border: 1px solid transparent;
-  background: linear-gradient(to right, #ff79da, #9256dc);
-  border-radius: 30px;
-  padding: 12px 15px 12px 15px;
-  text-decoration: none;
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-  box-shadow: 0.3rem 0.3rem 10px #9c9c9c;
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.button:hover {
-  background: linear-gradient(#ff79da, #9256dc);
-  transform: scale(1.2);
-  box-shadow: 0.5rem 0.5rem 16px #000000;
-}
-
 /*****************************************
         Section fonctionnement          
 ******************************************/
@@ -654,6 +635,25 @@ footer .footer-enseigne {
 footer a {
   color: white;
   text-decoration: none;
+}
+
+.button {
+  border: 1px solid transparent;
+  background: linear-gradient(to right, #ff79da, #9256dc);
+  border-radius: 30px;
+  padding: 12px 15px 12px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0.3rem 0.3rem 10px #9c9c9c;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.button:hover {
+  background: linear-gradient(#ff79da, #9256dc);
+  transform: scale(1.2);
+  box-shadow: 0.5rem 0.5rem 16px #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

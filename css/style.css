@@ -332,7 +332,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
 }
 .container_restaurant .full-block {
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   margin: auto;
 }
 .container_restaurant .container_restaurant_block {
@@ -424,24 +424,6 @@ section .contenu-fonctionnement .titre-fonctionnement {
   color: black;
   text-decoration: none;
 }
-.block_restaurant_info .heart2 svg {
-  position: absolute;
-  right: 35px;
-  top: -15px;
-  overflow: visible;
-}
-.block_restaurant_info .heart2 path {
-  stroke: black;
-  stroke-width: 2px;
-  stroke-opacity: 1;
-  fill-opacity: 0;
-  fill: url(#gradient1);
-  transition: all 1s ease-in-out;
-}
-.block_restaurant_info .heart2 path:hover {
-  fill-opacity: 1;
-  stroke-opacity: 0;
-}
 
 a:link,
 a:visited,
@@ -498,24 +480,6 @@ main .fond img {
   margin-top: 5px;
   position: absolute;
   right: 5%;
-}
-
-.heart1 svg {
-  overflow: visible;
-  margin-top: -60px;
-}
-.heart1 path {
-  stroke: black;
-  stroke-width: 2px;
-  stroke-opacity: 1;
-  fill-opacity: 0;
-  fill: url(#gradient1);
-  transition: all 1s ease-in-out;
-}
-.heart1 path:hover {
-  cursor: pointer;
-  fill-opacity: 1;
-  stroke-opacity: 0;
 }
 
 .section_carte {
@@ -654,6 +618,43 @@ footer a {
   background: linear-gradient(#ff79da, #9256dc);
   transform: scale(1.2);
   box-shadow: 0.5rem 0.5rem 16px #000000;
+}
+
+.heart2 svg {
+  position: absolute;
+  right: 35px;
+  top: -15px;
+  overflow: visible;
+}
+.heart2 path {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+  fill-opacity: 0;
+  fill: url(#gradient1);
+  transition: all 1s ease-in-out;
+}
+.heart2 path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+
+.heart1 svg {
+  overflow: visible;
+  margin-top: -60px;
+}
+.heart1 path {
+  stroke: black;
+  stroke-width: 2px;
+  stroke-opacity: 1;
+  fill-opacity: 0;
+  fill: url(#gradient1);
+  transition: all 1s ease-in-out;
+}
+.heart1 path:hover {
+  cursor: pointer;
+  fill-opacity: 1;
+  stroke-opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

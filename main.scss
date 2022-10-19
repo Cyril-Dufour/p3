@@ -1,10 +1,11 @@
 @import "./sass/utils/mixins.scss";
-@import "./sass/utils/keyframes.scss";
+@import "./sass/utils/animation.scss";
 @import "./sass/utils/variables.scss";
 @import "./sass/utils/media.scss";
 @import "./sass/pages/index.scss";
 @import "./sass/pages/restaurants.scss";
 @import "./sass/layout/header.scss";
 @import "./sass/layout/footer.scss";
-@import "./sass/layout/button.scss";
+@import "./sass/Composants/button.scss";
+@import "./sass/Composants/coeur.scss";
 

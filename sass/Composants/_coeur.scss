@@ -1,0 +1,40 @@
+.heart2{
+    svg{
+    position: absolute;
+    right: 35px;
+    top: -15px;
+    overflow: visible;
+    }
+    path{
+      stroke: black;
+      stroke-width: 2px;
+      stroke-opacity: 1;
+      fill-opacity: 0;
+      fill: url(#gradient1);
+      transition: all 1s ease-in-out;
+    }
+    path:hover{
+      fill-opacity: 1;
+      stroke-opacity: 0;
+    }
+  }
+
+  .heart1{
+    svg{
+      overflow: visible;
+      margin-top: -60px;  
+    }
+    path{
+      stroke: black;
+      stroke-width: 2px;
+      stroke-opacity: 1;
+      fill-opacity: 0;
+      fill: url(#gradient1);
+      transition: all 1s ease-in-out;
+    }
+    path:hover{
+      cursor: pointer;
+      fill-opacity: 1;
+      stroke-opacity: 0;
+    }
+  }

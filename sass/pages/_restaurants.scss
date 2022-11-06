@@ -41,15 +41,16 @@ main {
 
   .container_titre_page{
     .titre_page{
-      margin-left: 10%;
+      margin-left: 6%;
       display: flex;
       flex-direction: row;
       font-size: 28px;
+      font-family: Shrikhand, sans-serif;
     }
     svg{
       margin-top: 5px;
       position: absolute;
-      right: 5%;
+      right: 8%;
     }
   }
   
@@ -61,7 +62,7 @@ main {
       width: 100%;
     }
     .block1{
-      width: 80%;
+      width: 90%;
       margin:auto
     }
     .container_bloc_carte {
@@ -86,6 +87,7 @@ main {
     margin: auto;
     margin-bottom: 10px;
     box-shadow: 0px 0px 10px rgb(238, 238, 238);
+    cursor: pointer;
     .titre_carte {
       width: 100%;
       margin-top: 15px;
@@ -136,6 +138,8 @@ main {
     .container_button{
       margin-bottom: 30px;
       margin-top: 30px;
+
     }
   }
+  
   

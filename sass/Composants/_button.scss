@@ -1,18 +1,23 @@
 .button {
-    border: 1px solid transparent;
-    background: linear-gradient(to right, $secondary, $primary);
+    border: 0px solid transparent;
+    background: linear-gradient(to bottom, $secondary, $primary);
     border-radius: 30px;
-    padding: 12px 15px 12px 15px;
+    padding: 15px 15px 15px 15px;
     text-decoration: none;
     color: white;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 18px;
     box-shadow: 0.30rem 0.30rem 10px #9c9c9c;
     transform: scale(1);
     transition: transform 400ms;
+    cursor: pointer;
     &:hover {
         background: linear-gradient($secondary, $primary);
-        transform: scale(1.2);
+        transform: scale(1.1);
         box-shadow: 0.50rem 0.50rem 16px #000000;
     }
+}
+
+.button_page{
+    padding: 15px 40px 15px 40px;
+    cursor: pointer;
 }

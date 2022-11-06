@@ -145,6 +145,10 @@
     position: relative;
     left: 10px;
   }
+  .titre-principal img {
+    width: 20%;
+    margin: auto;
+  }
   h4 {
     font-size: 1.06rem;
     bottom: 20px;
@@ -177,6 +181,10 @@
     left: 6%;
     font-size: 130%;
   }
+  .titre-principal img {
+    width: 180px;
+    margin: auto;
+  }
   .section_carte {
     width: 100%;
   }
@@ -207,11 +215,15 @@ body main {
   margin: 0;
 }
 body h1 {
-  font-family: Shrikhand, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 img {
   object-fit: cover;
+}
+
+.titre-principal img {
+  padding: 15px 0 15px 0;
 }
 
 .index {
@@ -224,28 +236,35 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid rgba(242, 242, 242, 0.4392156863);
   width: 100%;
-  font-size: 22px;
+  font-size: 16px;
+  border-top: #dad6d6 2px solid;
+  font-weight: 500;
 }
 .index i {
   margin-right: 15px;
 }
 
 .stitre {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 0.4392156863);
   text-align: center;
   width: 100%;
   padding-top: 40px;
   padding-bottom: 50px;
 }
 .stitre .titre-header {
+  margin: 0px 40px 0px 40px;
   margin-top: -10px;
   margin-bottom: -5px;
-  font-size: 28px;
+  font-size: 26px;
 }
 .stitre .titre-header .text-titre-header {
   font-size: 22px;
+}
+
+.text-titre-header {
+  margin: 10px 30px 0 30px;
 }
 
 /*****************************************
@@ -255,6 +274,7 @@ section .contenu-fonctionnement {
   display: flex;
   flex-direction: column;
   background-color: white;
+  padding: 35px 0 35px 0;
 }
 section .contenu-fonctionnement .block-fonctionnement {
   margin-bottom: 30px;
@@ -262,53 +282,55 @@ section .contenu-fonctionnement .block-fonctionnement {
 section .contenu-fonctionnement .fonctionnement {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  margin: 10px auto 20px auto;
+  width: 90%;
+  margin: 10px auto 30px auto;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 40px;
   border-radius: 20px;
-  box-shadow: 0px 3px 10px #ebe8e8;
-  background-color: #f2f2f2;
+  box-shadow: 5px 5px 5px 5px #ebe8e8;
+  background-color: rgba(242, 242, 242, 0.4392156863);
   transform: scale(1);
 }
 section .contenu-fonctionnement .fonctionnement:hover {
-  transform: scale(1.05);
-  color: #9256dc;
+  color: #9356DC;
+  opacity: 0.8;
+  transform: scale(1.02);
 }
 section .contenu-fonctionnement .fonctionnement .num {
   display: flex;
-  background-color: #9256dc;
+  background-color: #9356DC;
   color: white;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
+  border-radius: 30px;
+  width: 24px;
+  height: 24px;
   justify-content: center;
+  align-items: center;
   margin-left: -10px;
   margin-right: 10px;
-  font-size: 24px;
+  font-size: 16px;
 }
 section .contenu-fonctionnement .fonctionnement p {
-  margin-left: 80px;
+  margin-left: 50px;
   margin-top: -20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 section .contenu-fonctionnement .titre-fonctionnement {
-  font-size: 22px;
-  margin-left: 55px;
+  font-size: 16px;
+  margin-left: 35px;
 }
 
 .fonctionnement i {
   display: flex;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-left: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(116, 116, 116);
 }
 .fonctionnement i:hover {
-  color: #9256dc;
+  color: #9356DC;
 }
 
 .fonctionnement:hover .fa-solid {
@@ -326,6 +348,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   width: 100%;
   margin: auto;
   justify-content: center;
+  padding-bottom: 60px;
 }
 .container_restaurant .block_titre_restaurant {
   width: 100%;
@@ -334,6 +357,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   width: 100%;
   padding-bottom: 0px;
   margin: auto;
+  margin-left: 0px;
 }
 .container_restaurant .container_restaurant_block {
   width: 100%;
@@ -343,6 +367,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   align-items: center;
   margin-bottom: 20px;
   margin: 10px;
+  margin-left: 0px;
 }
 .container_restaurant .block_restaurant {
   display: flex;
@@ -357,12 +382,8 @@ section .contenu-fonctionnement .titre-fonctionnement {
   margin-left: 55px;
 }
 .container_restaurant .titre_restaurant {
-  font-size: 32px;
-  margin-left: 55px;
-}
-.container_restaurant .titre_restaurant {
-  font-size: 32px;
-  margin-left: 55px;
+  font-size: 26px;
+  margin-left: 35px;
 }
 
 .block_restaurant_img {
@@ -389,7 +410,7 @@ section .contenu-fonctionnement .titre-fonctionnement {
   margin: 0 auto;
   right: 6px;
   top: 8%;
-  color: rgb(56, 185, 4);
+  color: rgb(44, 148, 3);
   width: 25%;
   height: 17%;
   border-radius: 2px;
@@ -471,15 +492,16 @@ main .fond img {
 }
 
 .container_titre_page .titre_page {
-  margin-left: 10%;
+  margin-left: 6%;
   display: flex;
   flex-direction: row;
   font-size: 28px;
+  font-family: Shrikhand, sans-serif;
 }
 .container_titre_page svg {
   margin-top: 5px;
   position: absolute;
-  right: 5%;
+  right: 8%;
 }
 
 .section_carte {
@@ -491,7 +513,7 @@ main .fond img {
   width: 100%;
 }
 .section_carte .block1 {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .section_carte .container_bloc_carte {
@@ -515,6 +537,7 @@ main .fond img {
   margin: auto;
   margin-bottom: 10px;
   box-shadow: 0px 0px 10px rgb(238, 238, 238);
+  cursor: pointer;
 }
 .bloc_carte .titre_carte {
   width: 100%;
@@ -554,7 +577,7 @@ main .fond img {
 }
 
 .button:hover {
-  background: linear-gradient(#ff79da, #9256dc);
+  background: linear-gradient(#ff79da, #9356DC);
   opacity: 0.5;
   transform: scale(1.15);
 }
@@ -575,7 +598,7 @@ header {
   align-items: center;
 }
 header img {
-  width: 20%;
+  width: 46%;
   margin: auto;
   display: flex;
   margin-top: 20px;
@@ -589,8 +612,16 @@ footer {
   width: 100%;
   color: white;
 }
-footer .foot_block {
+footer h1 {
+  font-family: Shrikhand, sans-serif;
   font-size: 18px;
+}
+footer .foot_block {
+  font-size: 15px;
+}
+footer i {
+  font-size: 14px;
+  margin-right: 5px;
 }
 footer .footer-enseigne {
   margin-left: 20px;
@@ -602,22 +633,27 @@ footer a {
 }
 
 .button {
-  border: 1px solid transparent;
-  background: linear-gradient(to right, #ff79da, #9256dc);
+  border: 0px solid transparent;
+  background: linear-gradient(to bottom, #ff79da, #9356DC);
   border-radius: 30px;
-  padding: 12px 15px 12px 15px;
+  padding: 15px 15px 15px 15px;
   text-decoration: none;
   color: white;
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 18px;
   box-shadow: 0.3rem 0.3rem 10px #9c9c9c;
   transform: scale(1);
   transition: transform 400ms;
+  cursor: pointer;
 }
 .button:hover {
-  background: linear-gradient(#ff79da, #9256dc);
-  transform: scale(1.2);
+  background: linear-gradient(#ff79da, #9356DC);
+  transform: scale(1.1);
   box-shadow: 0.5rem 0.5rem 16px #000000;
+}
+
+.button_page {
+  padding: 15px 40px 15px 40px;
+  cursor: pointer;
 }
 
 .heart2 svg {
